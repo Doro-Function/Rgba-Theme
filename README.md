@@ -105,7 +105,7 @@ VSCode `^1.74.0`
 
 ## Repository / 仓库
 
-[github.com/ChenJiaLin-Mr/Rgba-Theme](https://github.com/ChenJiaLin-Mr/Rgba-Theme)
+[github.com/Doro-Function/Rgba-Theme](https://github.com/Doro-Function/Rgba-Theme)
 
 ---
 

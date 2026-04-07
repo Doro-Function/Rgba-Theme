@@ -3,17 +3,17 @@
   "displayName": "Rgba Theme",
   "description": "A VSCode theme with RGBA color customization support | 支持 RGBA 自定义颜色的 VSCode 主题",
   "version": "0.5.0",
-  "publisher": "ChenJiaLin-Mr",
-  "author": "ChenJiaLin-Mr",
+  "publisher": "Doro-Function",
+  "author": "Doro-Function",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChenJiaLin-Mr/Rgba-Theme"
+    "url": "https://github.com/Doro-Function/Rgba-Theme"
   },
   "bugs": {
-    "url": "https://github.com/ChenJiaLin-Mr/Rgba-Theme/issues"
+    "url": "https://github.com/Doro-Function/Rgba-Theme/issues"
   },
-  "homepage": "https://github.com/ChenJiaLin-Mr/Rgba-Theme#readme",
+  "homepage": "https://github.com/Doro-Function/Rgba-Theme#readme",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#263238",
