@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls d:/桌面/Rgba-Theme/*.png d:/桌面/Rgba-Theme/*.jpg d:/桌面/Rgba-Theme/*.jpeg 2>/dev/null\"}",
-  "error": "Exit code 2\nd:/桌面/Rgba-Theme/icon.jpg",
-  "timestamp": "2026-04-07T09:44:15.441Z",
+  "tool_input_preview": "{\"command\":\"ls -la \\\"d:/桌面/Rgba-Theme/icon.png\\\" \\\"d:/桌面/Rgba-Theme/icon.jpg\\\" 2>/dev/null\"}",
+  "error": "Exit code 2\n-rw-r--r-- 1 陈家林耶 197609 692235 Apr  7 18:18 d:/桌面/Rgba-Theme/icon.png",
+  "timestamp": "2026-04-07T10:46:51.936Z",
   "retry_count": 1
 }

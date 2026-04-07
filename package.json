@@ -8,23 +8,35 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/rgba-theme"
+    "url": "https://github.com/ChenJiaLin-Mr/Rgba-Theme"
   },
   "bugs": {
-    "url": "https://github.com/your-username/rgba-theme/issues"
+    "url": "https://github.com/ChenJiaLin-Mr/Rgba-Theme/issues"
   },
-  "homepage": "https://github.com/your-username/rgba-theme#readme",
+  "homepage": "https://github.com/ChenJiaLin-Mr/Rgba-Theme#readme",
   "icon": "icon.png",
-"galleryBanner": {
+  "galleryBanner": {
     "color": "#263238",
     "theme": "dark"
   },
-  "keywords": ["theme", "rgba", "color", "customizable", "dark"],
+  "keywords": [
+    "theme",
+    "rgba",
+    "color",
+    "customizable",
+    "dark"
+  ],
   "engines": {
     "vscode": "^1.74.0"
   },
-  "categories": ["Themes", "Other"],
-  "activationEvents": [],
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:rgba-theme.customize",
+    "onCommand:rgba-theme.reset"
+  ],
   "main": "./extension.js",
   "contributes": {
     "themes": [
@@ -32,17 +44,42 @@
         "label": "Rgba Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Rgba Theme-color-theme.json"
+      },
+      {
+        "label": "Rgba Theme - Dracula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Rgba Theme-Dracula-color-theme.json"
+      },
+      {
+        "label": "Rgba Theme - Monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Rgba Theme-Monokai-color-theme.json"
+      },
+      {
+        "label": "Rgba Theme - GitHub Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Rgba Theme-GitHub Dark-color-theme.json"
       }
     ],
     "commands": [
       {
         "command": "rgba-theme.customize",
-        "title": "Rgba Theme: Customize Colors"
+        "title": "Customize Colors",
+        "category": "Rgba Theme"
       },
       {
         "command": "rgba-theme.reset",
-        "title": "Rgba Theme: Reset to Default"
+        "title": "Reset to Default",
+        "category": "Rgba Theme"
       }
-    ]
+    ],
+    "menus": {
+      "extension/context": [
+        {
+          "command": "rgba-theme.customize",
+          "when": "extensionStatus == installed"
+        }
+      ]
+    }
   }
 }
