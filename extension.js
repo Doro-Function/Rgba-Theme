@@ -19,65 +19,65 @@ function getThemePath() {
 }
 
 const COLOR_GROUPS = {
-  "编辑器": {
-    "editor.background": "背景色",
-    "editor.foreground": "前景色",
-    "editor.selectionBackground": "选中背景",
-    "editor.lineHighlightBackground": "当前行高亮",
-    "editorCursor.foreground": "光标颜色",
-    "editorLineNumber.foreground": "行号颜色",
-    "editorLineNumber.activeForeground": "当前行号颜色",
-    "editorGutter.background": "Gutter 背景",
-    "editor.findMatchBackground": "搜索匹配背景",
-    "editor.findMatchHighlightBackground": "搜索高亮背景",
-    "editor.wordHighlightBackground": "词高亮背景",
+  "Editor 编辑器": {
+    "editor.background": "Background 背景色",
+    "editor.foreground": "Foreground 前景色",
+    "editor.selectionBackground": "Selection Background 选中背景",
+    "editor.lineHighlightBackground": "Line Highlight 当前行高亮",
+    "editorCursor.foreground": "Cursor 光标颜色",
+    "editorLineNumber.foreground": "Line Number 行号颜色",
+    "editorLineNumber.activeForeground": "Active Line Number 当前行号颜色",
+    "editorGutter.background": "Gutter Background Gutter背景",
+    "editor.findMatchBackground": "Find Match 搜索匹配背景",
+    "editor.findMatchHighlightBackground": "Find Highlight 搜索高亮背景",
+    "editor.wordHighlightBackground": "Word Highlight 词高亮背景",
   },
-  "标签页": {
-    "tab.activeBackground": "活动标签背景",
-    "tab.activeForeground": "活动标签前景",
-    "tab.inactiveBackground": "非活动标签背景",
-    "tab.inactiveForeground": "非活动标签前景",
-    "tab.border": "标签边框",
+  "Tabs 标签页": {
+    "tab.activeBackground": "Active Tab Background 活动标签背景",
+    "tab.activeForeground": "Active Tab Foreground 活动标签前景",
+    "tab.inactiveBackground": "Inactive Tab Background 非活动标签背景",
+    "tab.inactiveForeground": "Inactive Tab Foreground 非活动标签前景",
+    "tab.border": "Tab Border 标签边框",
   },
-  "侧边栏": {
-    "sideBar.background": "侧边栏背景",
-    "sideBar.foreground": "侧边栏前景",
-    "sideBar.border": "侧边栏边框",
-    "sideBarTitle.foreground": "侧边栏标题",
+  "Sidebar 侧边栏": {
+    "sideBar.background": "Sidebar Background 侧边栏背景",
+    "sideBar.foreground": "Sidebar Foreground 侧边栏前景",
+    "sideBar.border": "Sidebar Border 侧边栏边框",
+    "sideBarTitle.foreground": "Sidebar Title 侧边栏标题",
   },
-  "活动栏": {
-    "activityBar.background": "活动栏背景",
-    "activityBar.foreground": "活动栏前景",
-    "activityBar.border": "活动栏边框",
-    "activityBarBadge.background": "活动栏徽章",
+  "Activity Bar 活动栏": {
+    "activityBar.background": "Activity Bar Background 活动栏背景",
+    "activityBar.foreground": "Activity Bar Foreground 活动栏前景",
+    "activityBar.border": "Activity Bar Border 活动栏边框",
+    "activityBarBadge.background": "Activity Bar Badge 活动栏徽章",
   },
-  "界面": {
-    "statusBar.background": "状态栏背景",
-    "statusBar.foreground": "状态栏前景",
-    "titleBar.activeBackground": "标题栏背景",
-    "panel.background": "面板背景",
-    "panel.border": "面板边框",
-    "terminal.background": "终端背景",
-    "terminal.foreground": "终端前景",
+  "UI 界面": {
+    "statusBar.background": "Status Bar Background 状态栏背景",
+    "statusBar.foreground": "Status Bar Foreground 状态栏前景",
+    "titleBar.activeBackground": "Title Bar Background 标题栏背景",
+    "panel.background": "Panel Background 面板背景",
+    "panel.border": "Panel Border 面板边框",
+    "terminal.background": "Terminal Background 终端背景",
+    "terminal.foreground": "Terminal Foreground 终端前景",
   },
-  "输入 / 按钮": {
-    "input.background": "输入框背景",
-    "input.foreground": "输入框前景",
-    "input.border": "输入框边框",
-    "button.background": "按钮背景",
-    "button.foreground": "按钮前景",
+  "Input / Button 输入/按钮": {
+    "input.background": "Input Background 输入框背景",
+    "input.foreground": "Input Foreground 输入框前景",
+    "input.border": "Input Border 输入框边框",
+    "button.background": "Button Background 按钮背景",
+    "button.foreground": "Button Foreground 按钮前景",
   },
-  "语法高亮": {
-    "comment": "注释",
-    "keyword": "关键字",
-    "string": "字符串",
-    "number": "数字",
-    "function": "函数名",
-    "variable": "变量",
-    "type": "类型/类",
-    "operator": "运算符",
-    "tag": "标签",
-    "attribute": "属性",
+  "Syntax 语法高亮": {
+    "comment": "Comment 注释",
+    "keyword": "Keyword 关键字",
+    "string": "String 字符串",
+    "number": "Number 数字",
+    "function": "Function 函数名",
+    "variable": "Variable 变量",
+    "type": "Type / Class 类型/类",
+    "operator": "Operator 运算符",
+    "tag": "Tag 标签",
+    "attribute": "Attribute 属性",
   }
 };
 
@@ -184,7 +184,7 @@ function getWebviewContent(colorMap, fontConfig) {
       if (fgKeys.includes(key) && colorMap['editor.background']) {
         const ratio = getContrastRatio(hex, colorMap['editor.background'].slice(0,7));
         const pass = ratio >= 4.5 ? '✓' : '✗';
-        contrastBadge = `<span class="contrast ${ratio>=4.5?'pass':'fail'}" title="对比度 ${ratio}:1">${pass} ${ratio}</span>`;
+        contrastBadge = `<span class="contrast ${ratio>=4.5?'pass':'fail'}" title="Contrast ratio 对比度 ${ratio}:1">${pass} ${ratio}</span>`;
       }
 
       return `<tr>
@@ -196,14 +196,14 @@ function getWebviewContent(colorMap, fontConfig) {
           <span id="alphaval_${key}" style="font-size:11px">${alpha}%</span>
         </td>
         <td>
-          <input type="text" id="input_${key}" value="${raw}" placeholder="rgba(r,g,b,a) 或 #rrggbb">
-          <button class="fav-btn" onclick="saveFav('${key}')" title="收藏此颜色">★</button>
+          <input type="text" id="input_${key}" value="${raw}" placeholder="rgba(r,g,b,a) or #rrggbb">
+          <button class="fav-btn" onclick="saveFav('${key}')" title="Save to Favorites 收藏此颜色">★</button>
         </td>
       </tr>`;
     }).join('');
     return `<h3>${groupName}</h3>
     <table>
-      <thead><tr><th>名称</th><th>Token</th><th>取色 / 透明度</th><th>值</th></tr></thead>
+      <thead><tr><th>Name 名称</th><th>Token</th><th>Color / Opacity 取色/透明度</th><th>Value 值</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
   }).join('');
@@ -242,32 +242,32 @@ function getWebviewContent(colorMap, fontConfig) {
 </style>
 </head>
 <body>
-<h2>Rgba Theme 颜色自定义</h2>
+<h2>Rgba Theme Color Customizer <span style="font-size:14px;opacity:0.6">颜色自定义</span></h2>
 
 <div class="theme-row">
-  <label>切换主题：</label>
+  <label>Switch Theme 切换主题：</label>
   <select id="themeSelect" onchange="switchTheme()">${themeOptions}</select>
 </div>
 
 <div class="font-section">
-  <strong>字体设置</strong><br><br>
-  <label>字体：<input type="text" id="fontFamily" value="${fontConfig.fontFamily}" style="width:220px" placeholder="Consolas, 'Courier New'"></label>
-  <label>字号：<input type="number" id="fontSize" value="${fontConfig.fontSize}" min="8" max="32"></label>
-  <label>行高：<input type="number" id="lineHeight" value="${fontConfig.lineHeight}" min="0" max="100" step="1"></label>
-  <button onclick="applyFont()" style="margin-left:8px">应用字体</button>
+  <strong>Font Settings 字体设置</strong><br><br>
+  <label>Font 字体：<input type="text" id="fontFamily" value="${fontConfig.fontFamily}" style="width:220px" placeholder="Consolas, 'Courier New'"></label>
+  <label>Size 字号：<input type="number" id="fontSize" value="${fontConfig.fontSize}" min="8" max="32"></label>
+  <label>Line Height 行高：<input type="number" id="lineHeight" value="${fontConfig.lineHeight}" min="0" max="100" step="1"></label>
+  <button onclick="applyFont()" style="margin-left:8px">Apply Font 应用字体</button>
 </div>
 
 <div class="fav-section">
-  <strong>收藏颜色</strong> <span style="font-size:11px;opacity:0.7">（点击收藏项可复制颜色值）</span>
+  <strong>Favorites 收藏颜色</strong> <span style="font-size:11px;opacity:0.7">(Click to copy 点击复制颜色值)</span>
   <div id="favList"></div>
 </div>
 
 ${sections}
 <div class="btns">
-  <button onclick="applyColors()">应用颜色</button>
-  <button onclick="resetColors()">恢复默认</button>
-  <button onclick="exportConfig()">导出配置</button>
-  <label style="padding:0"><button onclick="document.getElementById('importFile').click()">导入配置</button><input type="file" id="importFile" accept=".json" style="display:none" onchange="importConfig(event)"></label>
+  <button onclick="applyColors()">Apply Colors 应用颜色</button>
+  <button onclick="resetColors()">Reset Default 恢复默认</button>
+  <button onclick="exportConfig()">Export 导出配置</button>
+  <label style="padding:0"><button onclick="document.getElementById('importFile').click()">Import 导入配置</button><input type="file" id="importFile" accept=".json" style="display:none" onchange="importConfig(event)"></label>
 </div>
 <div id="status"></div>
 <script>
@@ -280,7 +280,7 @@ ${sections}
 
   function renderFavs() {
     const el = document.getElementById('favList');
-    if (!favs.length) { el.innerHTML = '<span style="opacity:0.5;font-size:12px">暂无收藏</span>'; return; }
+    if (!favs.length) { el.innerHTML = '<span style="opacity:0.5;font-size:12px">No favorites yet 暂无收藏</span>'; return; }
     el.innerHTML = favs.map((f,i) => \`<span class="fav-item" onclick="copyFav('\${f.color}')" title="\${f.key}: \${f.color}">
       <span class="fav-swatch" style="background:\${f.color.slice(0,7)}"></span>\${f.color}
       <span onclick="event.stopPropagation();removeFav(\${i})" style="opacity:0.5;margin-left:2px">✕</span>
@@ -298,7 +298,7 @@ ${sections}
 
   function copyFav(color) {
     navigator.clipboard.writeText(color).catch(()=>{});
-    document.getElementById('status').textContent = '已复制：' + color;
+    document.getElementById('status').textContent = 'Copied 已复制：' + color;
   }
 
   function removeFav(i) {
@@ -388,8 +388,8 @@ ${sections}
           if (data.font.fontSize) document.getElementById('fontSize').value = data.font.fontSize;
           if (data.font.lineHeight) document.getElementById('lineHeight').value = data.font.lineHeight;
         }
-        document.getElementById('status').textContent = '导入成功，点击"应用颜色"生效。';
-      } catch { document.getElementById('status').textContent = '导入失败：JSON 格式错误。'; }
+        document.getElementById('status').textContent = 'Imported successfully. Click "Apply Colors" to apply. 导入成功，点击"应用颜色"生效。';
+      } catch { document.getElementById('status').textContent = 'Import failed: invalid JSON. 导入失败：JSON 格式错误。'; }
     };
     reader.readAsText(file);
     e.target.value = '';
@@ -446,7 +446,7 @@ function activate(context) {
           if (!fs.existsSync(bp)) fs.copyFileSync(tp, bp);
           const currentTheme = vscode.workspace.getConfiguration('workbench').get('colorTheme');
           panel.webview.postMessage({ command: 'updateValues', colors: buildColorMap(getTheme()), theme: currentTheme });
-          panel.webview.postMessage({ command: 'status', text: '主题已切换，数据已同步。' });
+          panel.webview.postMessage({ command: 'status', text: 'Theme switched, data synced. 主题已切换，数据已同步。' });
         }
       });
       context.subscriptions.push(themeWatcher);
@@ -462,20 +462,20 @@ function activate(context) {
             if (!TOKEN_SCOPE_MAP[k] && parseRgba(v)) colorCustom[k] = parseRgba(v);
           });
           await vscode.workspace.getConfiguration('workbench').update('colorCustomizations', colorCustom, vscode.ConfigurationTarget.Global);
-          panel.webview.postMessage({ command: 'status', text: '已应用！（实时预览已生效，无需重载）' });
+          panel.webview.postMessage({ command: 'status', text: 'Applied! 已应用！（Live preview active, no reload needed 实时预览已生效，无需重载）' });
         } else if (msg.command === 'reset') {
           const tp = getThemePath();
           const bp = tp.replace('.json', '.default.json');
           if (fs.existsSync(bp)) fs.copyFileSync(bp, tp);
           await vscode.workspace.getConfiguration('workbench').update('colorCustomizations', {}, vscode.ConfigurationTarget.Global);
           panel.webview.postMessage({ command: 'updateValues', colors: buildColorMap(getTheme()) });
-          panel.webview.postMessage({ command: 'status', text: '已恢复默认。' });
+          panel.webview.postMessage({ command: 'status', text: 'Reset to default. 已恢复默认。' });
         } else if (msg.command === 'font') {
           const cfg = vscode.workspace.getConfiguration('editor');
           if (msg.fontFamily) await cfg.update('fontFamily', msg.fontFamily, vscode.ConfigurationTarget.Global);
           if (msg.fontSize) await cfg.update('fontSize', msg.fontSize, vscode.ConfigurationTarget.Global);
           await cfg.update('lineHeight', msg.lineHeight, vscode.ConfigurationTarget.Global);
-          panel.webview.postMessage({ command: 'status', text: '字体已应用。' });
+          panel.webview.postMessage({ command: 'status', text: 'Font applied. 字体已应用。' });
         } else if (msg.command === 'switchTheme') {
           await vscode.workspace.getConfiguration('workbench').update('colorTheme', msg.theme, vscode.ConfigurationTarget.Global);
         }
@@ -487,7 +487,7 @@ function activate(context) {
       const bp = tp.replace('.json', '.default.json');
       if (fs.existsSync(bp)) fs.copyFileSync(bp, tp);
       await vscode.workspace.getConfiguration('workbench').update('colorCustomizations', {}, vscode.ConfigurationTarget.Global);
-      vscode.window.showInformationMessage('Rgba Theme 已恢复默认。');
+      vscode.window.showInformationMessage('Rgba Theme reset to default. 已恢复默认。');
     })
   );
 }

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775553133594,
-  "projectRoot": "d:\\桌面\\Rgba-Theme",
+  "lastScanned": 1776060009390,
+  "projectRoot": "d:\\桌面\\Rgba-Theme2",
   "techStack": {
     "languages": [
       {
@@ -44,91 +44,29 @@
     "themes": {
       "path": "themes",
       "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1775553133535,
+      "fileCount": 7,
+      "lastAccessed": 1776060009357,
       "keyFiles": [
-        "Rgba Theme-color-theme.json"
+        "Rgba Theme-color-theme.json",
+        "Rgba Theme-Dracula-color-theme.json",
+        "Rgba Theme-Eye Care-color-theme.json",
+        "Rgba Theme-GitHub Dark-color-theme.json",
+        "Rgba Theme-Monokai-color-theme.json"
       ]
     }
   },
   "hotPaths": [
     {
       "path": "extension.js",
-      "accessCount": 76,
-      "lastAccessed": 1775565854447,
-      "type": "file"
-    },
-    {
-      "path": "package.json",
-      "accessCount": 21,
-      "lastAccessed": 1775565163179,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-color-theme.json",
-      "accessCount": 10,
-      "lastAccessed": 1775564414892,
-      "type": "file"
-    },
-    {
-      "path": "README.md",
-      "accessCount": 10,
-      "lastAccessed": 1775566093978,
-      "type": "file"
-    },
-    {
-      "path": "CHANGELOG.md",
-      "accessCount": 5,
-      "lastAccessed": 1775566104014,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-Xcode Light-color-theme.json",
-      "accessCount": 2,
-      "lastAccessed": 1775565117315,
+      "accessCount": 18,
+      "lastAccessed": 1776060283221,
       "type": "file"
     },
     {
       "path": "",
-      "accessCount": 2,
-      "lastAccessed": 1775565341160,
+      "accessCount": 1,
+      "lastAccessed": 1776060130695,
       "type": "directory"
-    },
-    {
-      "path": "LICENSE",
-      "accessCount": 1,
-      "lastAccessed": 1775554953202,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-Dracula-color-theme.json",
-      "accessCount": 1,
-      "lastAccessed": 1775558277383,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-Monokai-color-theme.json",
-      "accessCount": 1,
-      "lastAccessed": 1775558278554,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-GitHub Dark-color-theme.json",
-      "accessCount": 1,
-      "lastAccessed": 1775558279804,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-Xcode Dark-color-theme.json",
-      "accessCount": 1,
-      "lastAccessed": 1775564446649,
-      "type": "file"
-    },
-    {
-      "path": "themes\\Rgba Theme-Eye Care-color-theme.json",
-      "accessCount": 1,
-      "lastAccessed": 1775565133811,
-      "type": "file"
     }
   ],
   "userDirectives": []
